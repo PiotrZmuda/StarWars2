@@ -12,9 +12,20 @@
       <div class="header">
         <div id="buttons"></div>
       </div>
+
     </div>
-    <div id = "content">
-      <tabel id= "list"></tabel>
+    <div id="content">
+      <tabel id="list"></tabel>
+      <div id="pagination">
+        <button onclick="prevPage()" id="prev">PREV</button>
+        <input id="page-number" type="number" onkeydown="changePageNumber(event)" />
+        <select id="page=size" onchange="changePageSize(event)">
+          <option>2</option>
+          <option>5</option>
+          <option>10</option>
+        </select>
+        <button onclick="nextPage()" id="next">NEXT</button>
+      </div>
     </div>
 
     <script src="script.js"></script>
